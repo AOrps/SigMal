@@ -30,7 +30,7 @@ Hacking Process
 
 n.b. In the least, you have learned something
 
-## The Web (haxx)
+## The Web (of haxx)
 ![](../oven/gamehackweb.png)
 
 
