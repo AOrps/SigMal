@@ -1,6 +1,11 @@
 # SigMal
 SigMal Demos
 
+Howdy Welcome to SigMal
+
+Currently NJIT's premier Special Interest Group to Malware Analysis under ACM
+
+
 ## Topics that should be included
 * Game Hacking
 * CTFs and Wargames

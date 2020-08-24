@@ -1,8 +1,6 @@
 # Base SigMal Stuff
 
-Howdy Welcome to SigMal
-
-Currently NJIT's premier Special Interest Group to Malware Analysis under ACM
+Interested in taking a step down the security rabbithole? Welcome!
 
 _base is will talk about the basics of getting started analyzing your 
 

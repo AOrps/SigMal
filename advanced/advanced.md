@@ -14,3 +14,4 @@ Advanced will really develve into the topics that will set you appart from the c
 * Security Models
 * Automation (Writing Scripts)
 * Ghidra Improved
+* Assembly
