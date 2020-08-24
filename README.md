@@ -8,6 +8,10 @@ SigMal Demos
 * Automation (Writing scripts)
 * Exploit Research
 * Advanced Skills
+* Reverse Engineering
+
+;; src:: https://www.youtube.com/channel/UCCMi6F5Ac3kQDfffWXQGZDw
+;; https://github.com/RPISEC/Malware
 
 |
 |:---
