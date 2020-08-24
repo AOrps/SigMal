@@ -5,6 +5,7 @@ SigMal Demos
 * Game Hacking
 * CTFs and Wargames
 * Tools
+* Assembly
 * Automation (Writing scripts)
 * Exploit Research
 * Advanced Skills
