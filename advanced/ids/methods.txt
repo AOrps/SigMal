@@ -1,0 +1,93 @@
+There are many different methodologies used by IDPS to detect changes on the systems they
+monitor. These changes can be external attacks or misuse by internal personnel. All the
+methodologies use the same general model and the differences among them is mainly on how they
+process information they gather from the monitored to determine if a violation of the set policy
+has occurred.
+
+It was pretty difficult to find anything with Immune System. Seems like the current trend in
+security research pertaining to networks is AI/DL/ML.
+
+
+
+1. Anomaly Based Methodology
+* Anomaly based methodology works by comparing observed activity against a baseline profile.
+    The baseline profile is the learned normal behaviour of the monitored system and is
+    developed during the learning period were the IDPS learns the environment and develops a normal
+    profile of a normal profile of the monitored system.
+
+* The technique produces the most false positives and false negatives due to the high overhead
+    on the system.
+
+* The machine learning technique works by analyzing the system call and it is the widely used
+    technique.
+
+* Has the chance to detect new attacks.
+--> Can do machine learning and using BPNN (Back Propagation Neural Network)
+
+
+2. Signature Based Methodology
+* Signature based methodology works by comparing observed signatures to the signatures on file.
+    This file can be a database or a list of known attack signatures. (Perhaps even a local repo)
+    Any signatures on file is flagged as a violation of the security policy or as an attack.
+    ( Can be optimized from a software POV using a set as opposed to using a list/array)
+
+* Can not detect new attacks. (However, we may be able to get variants of the malicious entity,
+    by using Fuzzy Hashing)
+
+* It's simpler to modify and improve since its performance is mainly based on the signature or
+    rules.
+    (Blacklist)
+
+
+
+3. Stateful Protocol Analysis Based Methodology
+* The Stateful protocol analysis methodology works by comparing established profiles
+    how protocols should behave against the observed behaviour.
+
+* Unlike the signature based methodology which only compares observed behaviour against a list,
+    Stateful protocol analysis has a deep understanding of how the protocols and applications
+    interact/work.
+
+* The majority of the research on IDPS methodologies mainly concentrates on anamoly, signature,
+    and hybrid methodologies which further reduce the viability of Stateful protocol analysis as
+    a standalone IDPS.
+
+* This architecture is identical to that of the signaure based methodology with one exception,
+    instead of the signature database, it has a database of acceptable protocol behaviour.
+   (Whitelist)
+
+
+
+4. Hybrid Based Methodology
+* The hybrid based methodology works by combining two or more of the other methodologies.
+
+* The result is a better methodology that takes advantage of the strengths of the combined
+    methodologies.
+
+*  A hybrid intrusion detection system of cluster-based wireless sensors networks was
+    proposed that worked by breaking the detection into two, first it used anomaly based model
+    to filter the data and then it used signature based model to detect intrusion attempts.
+
+* Another model for a hybrid methodology was proposed based on how the human immune system
+    works [22]. The proposed system is “based on the framework of the human immune system,
+    that uses a hybrid architecture which applies both anomaly and misuse detection approaches”
+
+* Essentially
+    Monitored Environment -> Stateful Protocol Analysis -> Signature -> Anomaly -> Sanitized
+    Environment
+
+
+
++ The thing about using Deep Learning or any {Buzzword/Devirative} Learning, is that they can be
+    vulnerable to adversal attacks. Adversial attacks have shown that deep learning models are not
+    reliable in the presence of malicious entiites.
+
+* Neural network provides elasticity in intrusion detection process, where the neural network
+    has the ability to analyze and ensure that data right or partially right. Likewise, neural
+    network is capable of performing analysis on data in nonlinear fashion. 
+
+* Neural network has the ability to process data from a number of sources in a non-linear
+    fashion. This is very important especially when coordinated attack by multiple attackers
+    is conducted against the network.
+
+* Neural network is characterized by high speed in processing data [17].
