@@ -16,3 +16,4 @@ _base is will talk about the basics of getting started analyzing your
 * Shellcode Basics
 * Yara Rules Basics
 * Malware Signatures 
+* Crackmes

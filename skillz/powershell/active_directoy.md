@@ -37,7 +37,16 @@ AD will most likely be installed on default by Windows Server Manager
 
 
 ## Differing Views of Active Directory 
+* Administrator
+* Security Professional
+* Attacker
 
+Like in everything in security there are different views you can take it from. 
+
+
+## Domain Controllers
+* Contains & repliates domain data.
+* Provides authentication 
 
 
 ## Sources
