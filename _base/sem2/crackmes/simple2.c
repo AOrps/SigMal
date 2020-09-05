@@ -3,7 +3,7 @@
 int main(int argc, char* argv[]) {
     
     int try;
-    printf("Crackme Simple1\n");
+    printf("Crackme Simple2\n");
     printf("Enter password: ");
     scanf("%d", &try);
     if(try == 0x64b4cc) {
