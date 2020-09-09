@@ -16,5 +16,17 @@ def hardcode():
     hash2 = ssdeep.hash_from_file('{location of second executable}')
     print(ssdeep.compare(hash1, hash2))
 
+def main_cmd():
+    if sys.argv[1] != "" and sys.argv[2] != "":
+        cmd()
+
+def main_hardcode():
+    try:
+        hardcode()
+    except:
+        print("need to fill out the location for both executables")
+
+    
 if __name__ == "__main__":
-    hardcode()
+    main_cmd()
+    #main_hardcode()
