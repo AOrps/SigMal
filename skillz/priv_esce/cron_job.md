@@ -21,3 +21,7 @@ Misc:: https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.t
 > /tmp 
 * On *nix system, an archive of the cron job can be found here
 
+
+
+## Sources
+[linux privilege escalation cron jobs](https://atom.hackstreetboys.ph/linux-privilege-escalation-cron-jobs/)
