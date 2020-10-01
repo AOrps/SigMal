@@ -28,7 +28,7 @@ def portscan(host, max_range):
 
 
 def main():
-    portscan("127.0.0.1", 2800)  #localhost
+    portscan("127.0.0.1", 10)  #localhost
 
 
 if __name__ == "__main__":
