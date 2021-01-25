@@ -10,5 +10,6 @@
 | :----: | :----
 | Sem1 | (Basics of Malware Analysis) Types of Malware Analysis, Hashing of Files, Fuzzy Hashing of Files, File Analysis, Reverse Engineering via Decompilation, Ghidra ~ Static Malware Analysis
 | Sem2 | Reverse Engineering, Port Scanning, Firewalls, Web Security, Buffer Overflows
+| Sem3 | CTF Practicals, Basic Malware Analysis, Projects
 
 * All the sem[x] have either some or all slides that were shown for that semester.
