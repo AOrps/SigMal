@@ -4,21 +4,15 @@
 
 Currently NJIT's premier Special Interest Group for Security under ACM.
 
+## Goal
+
+![](./imgs/red_hollow_acm.png)
+Build up interest and skills within Security for NJIT ACM with insight into Malware Analysis and Practical Advice for CTFs
+
+
 ## Traversing the Repo
 | Directory                             | Description
 |:---:                                 |:----
-|[basics](./basics)                     | Our meetings slides, and some of the stuff we that will help for in instruction for that week/semester
+|[educational_materials](./educational_material)                     | Our meetings slides by semester, and anything that 
 |[specific_topics](./specific_topics)   | More advanced stuff and will take a deeper dive into the code / security
 
-## Topics that should be included
-* Game Hacking
-* CTFs and Wargames
-* Tools
-* Assembly Lessons
-* Automation (Writing scripts)
-* Exploit Research
-* Reverse Engineering
-* Linux Basics
-* Web Security
-* Basics Exploits
-* Development of Security Software
