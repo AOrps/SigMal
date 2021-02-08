@@ -7,6 +7,7 @@ Currently NJIT's premier Special Interest Group for Security under ACM.
 ## Goal
 
 ![](./imgs/red_hollow_acm.png)
+
 Build up interest and skills within Security for NJIT ACM with insight into Malware Analysis and Practical Advice for CTFs
 
 

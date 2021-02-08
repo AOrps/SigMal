@@ -4,7 +4,7 @@ Tentative list of topics:
 
 1. Introduction
 2. [Linux, Processors](02.md)
-3. Signatures, Magic Numbers, Hashing
+3. [Signatures, Magic Numbers, Hashing](03.md)
 4. Bypassing Signature based IDS/IDPS
 5. Cyber-warfare
 6. Assembly, Debugging
