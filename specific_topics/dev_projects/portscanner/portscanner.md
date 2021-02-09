@@ -7,10 +7,9 @@
 
 ## Common Port Scanners
 * nmap
-* (The ones below { ;)})
+* (The ones below {`;)`})
 
 ## Sig•Mal Projects Groups
-* Group 1
-    * [Python PortScanner](https://github.com/PhilPore/SigMAL/tree/Pimp-My-PortScanner)
-* Group 2
-    * [C++ PortScanner](https://github.com/giancarloC/Port-Scanner)
+| Group #1                             | Group 2
+|:---                                 |:----
+|[Python PortScanner](https://github.com/PhilPore/SigMAL/tree/Pimp-My-PortScanner)                     | [C++ PortScanner](https://github.com/giancarloC/Port-Scanner)
