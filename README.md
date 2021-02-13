@@ -4,8 +4,6 @@
 
 ![](https://github.com/NJIT-ACM/NJIT-ACM/blob/main/GithubPFP.png)
 
-![](https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/blob/main/GithubPFP.png)
-
 Currently NJIT's premier Special Interest Group for Security under ACM.
 
 ## Goal
