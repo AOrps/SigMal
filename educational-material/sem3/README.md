@@ -5,13 +5,13 @@ Tentative list of topics:
 1. Introduction
 2. [Linux, Processors](02.md)
 3. [Signatures, Magic Numbers, Hashing](03.md)
-4. Bypassing Signature based IDS/IDPS
-5. Cyber-warfare
-6. Assembly, Debugging
-7. Shellcode
-8. Defensive Countermeasures
-9. Applied + Automated Static Analysis
-10. End
+4. [Bypassing Signature based IDS/IDPS](04.md)
+5. [Cyber-warfare](05.md)
+6. [Assembly, Debugging](06.md)
+7. [Shellcode](07.md)
+8. [Defensive Countermeasures](08.md)
+9. [Applied + Automated Static Analysis](09.md)
+10. [End](10.md)
 
 ## Building
 
