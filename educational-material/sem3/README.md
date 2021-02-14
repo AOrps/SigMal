@@ -15,4 +15,13 @@ Tentative list of topics:
 
 ## Building
 
-Git and GitHub are best suited for tracking plaintext files. Therefore, we are experimenting with a workflow that generates PowerPoints from Markdown using [Pandoc](https://pandoc.org/). To build all files, simply run [`build.sh`](build.sh).
+* Git and GitHub are best suited for tracking plaintext files. Therefore, we are experimenting with a workflow that generates PowerPoints from Markdown using [Pandoc](https://pandoc.org/). To build all files, simply run [`build.sh`](build.sh).
+
+* Another experimental process is [mdToThing](https://github.com/njitacm/mdToThing) which uses [marp-cli](https://github.com/marp-team/marp-cli) for generating ` { .pptx | .pdf | .html }` files from `{ .md }` and will also have a custom `Sig•Mal` css template.
+
+## How to Contribute For Sem3
+* `<TEMPORARY THIS SHOULD EVENTUALLY BE DELETED>`
+1. `cp template.md **.md`
+    * Where `**` in `**.md` corresponds to the week / topic
+2. Push changes
+3. Optional: Run mdToThing scripts on `**.md` file to test compatibility

@@ -2,9 +2,10 @@
 
 ##  _"Security in Development, Development for Security"_
 
-![](https://github.com/NJIT-ACM/NJIT-ACM/blob/main/GithubPFP.png)
+Currently NJIT's premier Security Oriented Special Interest Group for Security under ACM.
 
-Currently NJIT's premier Special Interest Group for Security under ACM.
+![](https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/main/ACMLOGO.png)
+
 
 ## Goal
 
