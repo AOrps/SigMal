@@ -12,6 +12,4 @@
 * [snort3](https://github.com/snort3/snort3)
 
 ## Sig•Mal Projects / Group
-| Group #1                            | Group 2
-| :---                                | :----
-|[Signature Based IDS](#)             | [Signature Based IDS](#)
+[spade-as-in-ace/SignatureBasedIDS](https://github.com/spade-as-in-ace/SignatureBasedIDS)
