@@ -23,7 +23,7 @@ Notice when comparing the hex from the pure image and the altered image. Of cour
 
 Of course, after playing around with some syntax and forgetting strings is a beautiful thing; we can actually get the hidden text.
 
-###**Naturally, this works for hiding files too.**
+**Naturally, this works for hiding files too.**
 Let's say that I have some data I want to hide, bank account details, passwords, the works. While I could keep that stuff on something like a usb, I could also be very noided and decide to hide it an image.
 
 ![](img/jocko.png)
