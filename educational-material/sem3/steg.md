@@ -20,3 +20,7 @@ Exhibit B: Hiding a message in the image, and comparing the pure images and the 
 Notice when comparing the hex from the pure image and the altered image. Of course, when we use something like xxd, it will display something like this. 
 
 ![](img/stringsnhex.png)
+
+Of course, after playing around with some syntax and forgetting strings is a beautiful thing; we can actually get the hidden text.
+
+**Naturally, this works for hiding files too.**
