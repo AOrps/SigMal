@@ -33,4 +33,6 @@ So, I ended up hiding my secret file into this new png. I simply catted everythi
 Do note, I acccidentally overwrote one of the Jocko files, so I made a Jocko2. Pardon my innaneness.
 ![](img/oddity.png)
 
-The above image 
+The above image displays not only that there is a file inside the image, but also the contents of said image. The reason? It's becauses already compress their data, so shoving a compressed item in there won't cause any *extra compression*, it'll just treat it as readable content. Anyways, the next image, and unfortunate last of this psuedo demo, is me unzipping my jpg's contents.
+
+![](img/theend.png)
