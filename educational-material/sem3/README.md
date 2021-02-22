@@ -6,7 +6,7 @@ Tentative list of topics:
 2. [Linux, Processors](02.md)
 3. [Signatures, Magic Numbers, Hashing](03.md)
 4. [Bypassing Signature based IDS/IDPS](04.md)
-5. [Cyber-warfare](05.md)
+5. [Hacky Sig•Mal Tings (yes Tings)](05.md)
 6. [Assembly, Debugging](06.md)
 7. [Shellcode](07.md)
 8. [Defensive Countermeasures](08.md)
