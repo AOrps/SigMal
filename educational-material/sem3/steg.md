@@ -16,3 +16,7 @@ This is the unaltered image. I made a copy of it called purewillick, this is mai
 Exhibit B: Hiding a message in the image, and comparing the pure images and the edited images.
 ==================================
 ![](img/themiddle.png)
+
+Notice when comparing the hex from the pure image and the altered image. Of course, when we use something like xxd, it will display something like this. 
+
+![](img/stringsnhex)
