@@ -8,4 +8,5 @@ In essence, Steg is hiding things inside images. This can vary from text, files,
 
 Exhibit A: The untouched file
 ==================================
+
 ![]("img/jocko.png")
