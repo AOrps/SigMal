@@ -10,7 +10,7 @@ Tentative list of topics:
 6. [Assembly, Debugging](06.md)
 7. [Shellcode](07.md)
 8. [Defensive Countermeasures](08.md)
-9. [Sem 3 End](09.md)
+9. [Sem 3 End / Speedrun Recap](09.md)
 
 ## Building
 
