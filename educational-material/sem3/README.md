@@ -9,8 +9,9 @@ Tentative list of topics:
 5. [Hacky Sig•Mal Tings (yes Tings)](05.md)
 6. [Assembly, Debugging](06.md)
 7. [Shellcode](07.md)
-8. [Defensive Countermeasures](08.md)
-9. [Sem 3 End / Speedrun Recap](09.md)
+8. [Defensive Countermeasures / (hello-world)s](08.md)
+9. [Buffer Overflow](09.md)
+10. [Sem 3 End / Speedrun Recap](10.md)
 
 ## Building
 
