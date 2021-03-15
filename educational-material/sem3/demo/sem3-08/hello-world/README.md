@@ -8,6 +8,12 @@
 
 * **Note that, not all languages are written the same or for the same purpose so take the following with hefty amounts of salt. I thought it would be interesting to look at and really help me make up my mind about picking a dope language to master.**
 
+---
+
+## Chaos in Python
+* It single-handedly language percentage of SigMal
+* ![](https://github.com/AOrps/SigMal/blob/master/educational-material/sem3/img/python_bruh.png)
+
 
 ---
 
@@ -45,7 +51,7 @@
 ## Considerations
 * NB: `'Programming' or 'Scripting' Language` should be taken with a grain of salt. There can be many arguments whether they are valid.
 
-* NB: This is very incomplete list of programming languages. 
+* NB: This is very incomplete list of programming languages. And it only looks at the executable not everything that that comes along with the executable.
 
 * C# compiles to .exe as opposed to a ELF or Mach-O executable bc Microsoft!
 * Java compile to .class file because it is really the worst.

@@ -10,7 +10,7 @@ Tentative list of topics:
 6. [Assembly, Debugging](06.md)
 7. [Shellcode](07.md)
 8. [Defensive Countermeasures / (hello-world)s](08.md)
-9. [Buffer Overflow](09.md)
+9. [Buffer Overflow / TOR Routing](09.md)
 10. [Sem 3 End / Speedrun Recap](10.md)
 
 ## Building
