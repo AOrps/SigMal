@@ -11,16 +11,19 @@
 ---
 
 ## Chaos in Python
-* It single-handedly language percentage of SigMal
-* ![](https://github.com/AOrps/SigMal/blob/master/educational-material/sem3/img/python_bruh.png)
+* It single-handedly language percentage of the SigMal repo
 
+![](https://github.com/AOrps/SigMal/blob/master/educational-material/sem3/img/python_bruh.png)
+
+
+* Zig also had a lot for one file compilation, but python really stepped it up!
 
 ---
 
 ## "Base Case"
 * All programs need to print out "Hello" and then a newline char
 
-* All programs need to be compiled on the same architecture / same OS.
+* All programs ~_need_ to be compiled on the same architecture / same OS.
 	* Test files are compiled on 64-bit architecture and for MacOSX
 
 * Since this is a simple code, it should be all on one file.
@@ -35,7 +38,7 @@
 | Bash | ---- | Scripting
 | C | `49,424 bytes (53 KB on disk)` | Programming
 | C++ | `55,960 bytes (57 KB on disk)` | Programming
-| C# | `3,072 bytes (4 KB on disk)` | Programming
+| C# | ~`3,072 bytes (4 KB on disk)` | Programming
 | Golang | `2,146,968 bytes (2.2 MB on disk)` | Programming
 | Haskell | `1,341,808 bytes (1.3 MB on disk)` | Programming
 | Java | ~`409 bytes (4 KB on disk)` (.class) | Programming
