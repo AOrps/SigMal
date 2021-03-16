@@ -6,7 +6,7 @@
     <!-- Like I don't think this is how you are supposed to write it or best practices but lolz-->
 
 ## Purpose
-* To demonstrate how system daemons work and  
+* To demonstrate how system daemons work and how to exploit this!
 
 
 ## Demo Usage
@@ -38,7 +38,7 @@
 
 
 ### Make request to the system daemon
-* `python3 -c 'import requests; requests.get("https://127.0.0.1:80)`
+* `python3 -c 'import requests; requests.get("https://127.0.0.1:80")'`
     * This creates a get request to the system daemon that is running at localhost on Port 80
 
 ### Logs
@@ -48,3 +48,22 @@
 
 ### "Clean up" (Remove binaries)
 * `make clean`
+    * Removes Binaries
+* `make deepc`
+    * Remove Binaries and Log Files
+
+## Step to Exploiting tinywebd
+
+1. (If available) Analyze source code (Debuggers help with getting a deeper dive into the code and how it functions) 
+1. Do a informed guess / conjecture of  vulnerability based on the state of the source code.
+1. Write a script that will exploit the program
+1. Optimize exploitation script
+
+### For tinywebd
+
+1. Figure out the offset between the request buffer and stored return address.
+1. Overflow shellcode into the return address.
+    - A helpful trick is to use a NOP sled and use that as the "landing" for the shellcode
+1. Open shell with shellcode to run as root
+1. Pwn and Take over the System
+

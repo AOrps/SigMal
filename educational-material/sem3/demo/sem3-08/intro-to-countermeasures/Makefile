@@ -43,6 +43,11 @@ ifneq (,$(wildcard ./tinywebd))
 	@rm tinywebd
 endif
 
+ifneq (, $(wildcard ./a.out))
+	@echo "Removing any potential a.out..."
+	@rm a.out
+endif
+
 #  deepc (DeepClean) -> Cleans all files that can be attached with the program and build
 deepc: clean
 	@echo "Removing tinywebd.log...."
