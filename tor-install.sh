@@ -24,7 +24,7 @@ echo -e "${RED}> cd torghost${NC}"
 cd torghost
 echo -e "${RED}> chmod +x build.sh${NC}"
 chmod +x build.sh
-# cython3 is needed to buildd
+# cython3 is needed to build
 echo -e "sudo apt install cython3${NC}"
 sudo apt install cython3
 echo -e "${RED}> ./build.sh${NC}"
