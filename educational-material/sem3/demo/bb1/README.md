@@ -102,3 +102,5 @@ MetaCTF{c_strings_are_the_best_strings}
 ```
 
 The flag has been captured! I hope you enjoyed this demo.
+
+🚩
