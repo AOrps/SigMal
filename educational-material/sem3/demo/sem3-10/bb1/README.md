@@ -83,16 +83,15 @@ Here is a table that describes all of the contents of the attack string.
 The string that needs to be typed in contains unprintable characters. Therefore, I created a small C program [`mal.c`](mal.c) that outputs the necessary string.
 
 ```sh
-gcc mal.c -o mal              # compile mal.c
-./mal > attack                # save the attack string in a file
-echo 'dummy flag' > flag.txt  # dummy flag
-./bb1 < attack                # run bb1 with attack string input
+gcc mal.c -o mal
+echo 'dummy flag' > flag.txt
+./mal | ./bb1
 ```
 
 This did not work locally on my machine. Running it with `gdb` told me that `flag.txt` did not exist. I suspect this is some kind of binary compatibility issue. However, this did work on the real problem server which is good enough.
 
 ```sh
-nc host1.metaproblems.com 5151 < attack
+./mal | nc host1.metaproblems.com 5151
 ```
 
 ```txt
