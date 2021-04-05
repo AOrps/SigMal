@@ -18,6 +18,7 @@ int main(int argc, char const *argv[])
     print_bytes(padding, sizeof(padding));
     print_bytes(rbp, sizeof(rbp) - 1);
     print_bytes(win, sizeof(win) - 1);
+    fputc('\n', stdout);
 
     return EXIT_SUCCESS;
 }
