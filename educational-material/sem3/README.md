@@ -11,7 +11,7 @@ Tentative list of topics:
 7. [Shellcode](07.md)
 8. [Defensive Countermeasures / (hello-world)s](08.md)
 9. [Buffer Overflows](09.md), TOR Routing
-10. [Sem 3 End / Speedrun Recap](10.md)
+10. [Sem 3 End / Speedrun Recap / CTF Walkthroughs](10.md)
 
 ## Building
 
