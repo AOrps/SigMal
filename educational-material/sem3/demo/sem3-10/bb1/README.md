@@ -78,9 +78,9 @@ Here is a table that describes all of the contents of the attack string.
 | 2    | 32    | Padding, any character sequence       |
 | 3    | 8     | `0x00007fffffffde90` in little endian |
 | 4    | 8     | `0x0000000000401172` in little endian |
-| 5    | 1     | Line feed, optional\*                 |
+| 5    | 1     | Line feed                             |
 
-The string that needs to be typed in contains unprintable characters. Therefore, I created a small C program [`mal.c`](mal.c) that outputs the necessary string. \*Recall that `gets` reads input until newline or EOF is encountered. If it is going to be piped into `bb1`, then printing line feed is required. If it is first redirected to a file and then in a separate command redirected to `bb1`, then EOF is implicit. The latter should be preferred.
+The string that needs to be typed in contains unprintable characters. Therefore, I created a small C program [`mal.c`](mal.c) that outputs the necessary string.
 
 ```sh
 gcc mal.c -o mal              # compile mal.c
@@ -103,4 +103,4 @@ MetaCTF{c_strings_are_the_best_strings}
 
 The flag has been captured! I hope you enjoyed this demo.
 
-🚩
+:triangular_flag_on_post:
