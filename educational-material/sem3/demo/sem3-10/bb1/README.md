@@ -51,6 +51,8 @@ The output of `x/5i vuln` shows an assembler code dump of the first 5 instructio
 
 The output of `x/2a $rsp` shows two address-width (8 bytes each) values on the top of the stack. Since `push %rbp` was the most recent stack operation, the saved value of `%rpb` resides on the top of the stack. Next comes the address `0x401238` which is the same address we saw in `backtrace`.
 
+Note that the saved value of `%rbp` will vary due to [address space layout randomization](https://en.wikipedia.org/wiki/Address_space_layout_randomization). However, we can disregard this value because it is not popped until the second-to-last instruction of `main`.
+
 ```txt
 (gdb) x/2a $rsp
 0x7fffffffdba0: 0x7fffffffdbb0  0x401238 <main+74>
@@ -72,13 +74,13 @@ We have located the region of memory that needs to be overwritten. A couple of c
 
 Here is a table that describes all of the contents of the attack string.
 
-| #    | Bytes | Contents                              |
-| :--- | :---- | :------------------------------------ |
-| 1    | 16    | `"Sup3rs3cr3tC0de"`, ends with `NUL`  |
-| 2    | 32    | Padding, any character sequence       |
-| 3    | 8     | `0x00007fffffffde90` in little endian |
-| 4    | 8     | `0x0000000000401172` in little endian |
-| 5    | 1     | Line feed                             |
+| #    | Bytes | Contents                             |
+| :--- | :---- | :----------------------------------- |
+| 1    | 16    | `"Sup3rs3cr3tC0de"`, ends with `NUL` |
+| 2    | 32    | Padding, any character sequence      |
+| 3    | 8     | Any address                          |
+| 4    | 8     | `0x401172` in little endian          |
+| 5    | 1     | Line feed                            |
 
 The string that needs to be typed in contains unprintable characters. Therefore, I created a small C program [`mal.c`](mal.c) that outputs the necessary string.
 
