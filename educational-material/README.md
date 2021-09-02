@@ -19,3 +19,10 @@ Below are rough outlines of topics that were covered during each semester. The s
     - CTF practicals
     - Basic malware analysis
     - Projects
+- [Semester 4](sem4/)
+    - Graphs: Control Flow Graphs, Malware Visualization
+    - Crypto: Hashing, Encryption
+    - Hatching Triage
+    - Malware Development
+    - Ghidra (Reverse Engineering)
+    - Sliver (Adversary Emulation Framework)
