@@ -12,8 +12,9 @@
 
 Currently NJIT's premier Security Oriented Special Interest Group for Security under ACM.
 
- <img src="https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/main/ACMLOGO.png" alt="" data-canonical-src="" width="300" height="300" style="display: block; margin-left:auto; margin-right:auto;">
-
+<p align="center">
+    <img src="https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/main/ACMLOGO.png" alt="" data-canonical-src="" width="300" height="300">
+</p>
 
 ## Goal
 

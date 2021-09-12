@@ -19,6 +19,22 @@
 - Slides can't have more than 5 sub-topics.
 - Attempt to have some concrete example (code, demo) along with lesson.
 - Ensure all images, content is licensed with Creative Commons or Open-Sourced
-- Resize Images to 200x200 (check comment here)
-<!-- <img src="src image" alt="" data-canonical-src="" width="200" height="200"> /> -->
+- Resize Images to (height=300, width=auto) (check comment here)
+<!-- TEMPLATE FOR Resized Image (scales down to height=300): 
+<p align="center">
+    <img 
+
+    src="https://raw.githubusercontent.com/AOrps/SigMal/main/educational-material/4sem/img/{image-name}.png"
+
+    alt="" 
+    
+    data-canonical-src="{Enter Creative Commons picture if not generated from scratch}" 
+    
+    height="300" width="auto"
+    
+    >
+</p>
+
+\\ technically don't need the width="auto" but we ballin'
+-->
 
