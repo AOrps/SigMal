@@ -2,9 +2,17 @@
 
 ##  _"Security in Development, Development for Security"_
 
+## Traversing the Repo
+| Directory | Description
+|:---:   |:----
+|[educational-materials](./educational-material) |  Collection of slides and information by semesters 
+|[projects](./projects) | Projects from Sig•Mal 
+
+## About
+
 Currently NJIT's premier Security Oriented Special Interest Group for Security under ACM.
 
-![](https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/main/ACMLOGO.png)
+ <img src="https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/main/ACMLOGO.png" alt="" data-canonical-src="" width="300" height="300" style="display: block; margin-left:auto; margin-right:auto;">
 
 
 ## Goal
@@ -13,8 +21,4 @@ Currently NJIT's premier Security Oriented Special Interest Group for Security u
 
 > POG ~ Linus Torvalds (T-Daddy)
 
-## Traversing the Repo
-| Directory | Description
-|:---:   |:----
-|[educational-materials](./educational-material) |  Collection of slides and information by semesters 
-|[projects](./projects) | Projects from Sig•Mal 
+

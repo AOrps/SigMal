@@ -16,6 +16,9 @@
 <!-- :globe_with_meridians: or :round_pushpin: for graphs -->
 
 ## Constraints
-- Slides can't have more than 6 sub-topics.
+- Slides can't have more than 5 sub-topics.
 - Attempt to have some concrete example (code, demo) along with lesson.
 - Ensure all images, content is licensed with Creative Commons or Open-Sourced
+- Resize Images to 200x200 (check comment here)
+<!-- <img src="src image" alt="" data-canonical-src="" width="200" height="200"> /> -->
+
