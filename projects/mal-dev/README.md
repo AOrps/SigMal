@@ -14,11 +14,6 @@ Team a piece of custom malware executable ("ransomware")
 If 2 Teams:
 Teams create a custom malware executable ("ransomware") and compete against each other using different languages and potentially in challenges. 
 
-- Speed
-- Readability
-- Writing to specific places in computer
-- Defense Evasion
-
 ## Steps
 <!-- 
 Jobs:
