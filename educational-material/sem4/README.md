@@ -11,7 +11,7 @@
 | [:books:](05.md)          | [Malware Primer](05.md)                        | Info Necessary for Writing our own Malware
 | [:shipit:](06.md)         | [0x`m4l-d3v`](06.md)                           | Writing our own Malware
 | [:dragon_face:](07.md)    | [NSA's Ghidra](07.md)                          | Reversing Malware with Ghidra 
-| [:fox_face:](08.md)       | [BishopFox's Sliver](08.md)                    | Learning an Adversary Emulation Framework 
+<!-- | [:fox_face:](08.md)       | [BishopFox's Sliver](08.md)                    | Learning an Adversary Emulation Framework  -->
 
 <!-- :globe_with_meridians: or :round_pushpin: for graphs -->
 
