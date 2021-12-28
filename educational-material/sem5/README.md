@@ -8,7 +8,7 @@
 | :---: | :--:   | :----
 | :new: | [Projects](#projects) |
 | :new: | [F-OOP](#f-oop) | OOP is stupid
-
+| :new: | [Agile](#agile) | Agile Fundamentals 
 
 
 <!-- So everything is on one README -->
@@ -55,4 +55,53 @@ print(current_stock)
 ```
 
 ### Not OOP
+
+
+
+<div id="agile"><div>
+
+## Agile
+  
+Built for change and flexibility
+  
+ - Able to move quickly and easily
+ - Willing to change and adapt
+ - Done in pieces (More iterative)
+
+ - Agile projects phases overlap and tasks are completed in iterations, (Scrum -> Sprints)
+  
+ - Great for a not concrete project, just ideas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
