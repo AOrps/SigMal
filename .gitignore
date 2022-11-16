@@ -1,3 +1,11 @@
-*.7z
 **/_revenge
 **/_skillz
+
+projects/mal-dev/ransom*
+
+# Python Environment
+Include/
+Lib/
+Scripts/
+pyvenv.cfg
+__pycache__
